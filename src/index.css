@@ -22,11 +22,12 @@ nav {
 }
 
 .navLinks {
-  width: 40%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  color: white;
 }
 .navLinks :visited{
   text-decoration: none;
@@ -48,4 +49,19 @@ nav {
   border-radius: 25px;
   filter: invert(100%);
   border: solid 2px white;
+}
+
+/* Mobile Version */
+
+@media all and (max-width: 500px){
+
+  nav {
+    background-color: rgb(61, 84, 211);
+    color: white;
+  }
+
+  body{
+    background-color: black;
+    color: white;
+  }
 }
