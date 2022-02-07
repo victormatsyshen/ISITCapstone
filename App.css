@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.box {
+  margin: auto;
+  margin-bottom: 10px;
+  border: 2px solid cadetblue;
+  width: 100px;
+  height: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: oblique;
+}
