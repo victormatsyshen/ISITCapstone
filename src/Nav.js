@@ -8,6 +8,7 @@ function Nav() {
         <ul className='navLinks'>
             <li><a href="/">Home</a></li>
             <li><a href="/victorspage">Victor's Page</a></li>
+            <li><a href="/dylanspage">Dylan's Page</a></li>
             
             <MobileView>
               <li><a href="/apppage">App Page</a></li>
