@@ -1,5 +1,5 @@
-import './App.css';
-import devonImage from './images/Seahawks.png' //imported image to my page
+import '../styles/App.css';
+import devonImage from '../images/Seahawks.png' //imported image to my page
 
 
 function DevonsPage() {

@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+import '../styles/App.css';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 function Nav() {

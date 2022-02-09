@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "./static/css/main.c71d9248.css",
+    "main.js": "./static/js/main.6c0a5e21.js",
+    "static/media/crocodileTeamLogo.png": "./static/media/crocodileTeamLogo.33e4fdcdd25649baa374.png",
+    "static/media/Autobots-Logo-Icon.png": "./static/media/Autobots-Logo-Icon.5bf19711ef8f22bd74b2.png",
+    "static/media/Seahawks.png": "./static/media/Seahawks.98d848217d6655a7d4a6.png",
+    "index.html": "./index.html",
+    "main.c71d9248.css.map": "./static/css/main.c71d9248.css.map",
+    "main.6c0a5e21.js.map": "./static/js/main.6c0a5e21.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c71d9248.css",
+    "static/js/main.6c0a5e21.js"
+  ]
+}

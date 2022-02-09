@@ -1,5 +1,5 @@
-import './App.css';
-import autobotimage from './images/Autobots-Logo-Icon.png'
+import '../styles/App.css';
+import autobotimage from '../images/Autobots-Logo-Icon.png'
 
 function DylansPage(){
     return (
