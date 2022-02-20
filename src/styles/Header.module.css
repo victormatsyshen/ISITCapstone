@@ -1,0 +1,11 @@
+.container
+{
+    text-align: center;
+    border: solid 1px black;
+}
+
+.header
+{
+    background-color: rgb(161, 241, 180);
+    padding: 2vh;
+}

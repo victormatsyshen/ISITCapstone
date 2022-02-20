@@ -1,0 +1,12 @@
+.footerContainer
+{
+    text-align: center;
+    flex-shrink: 0;
+    border: solid 1px black;
+}
+
+.footer
+{
+    background-color: rgb(148, 148, 228);
+    padding: 2vh;
+}
