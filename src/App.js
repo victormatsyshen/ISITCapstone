@@ -6,13 +6,12 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 
 import Header from "./components/Header";
 import Nav from "./components/Nav";
-import DisplayItem from "./components/DisplayPage";
+import DisplayItem from "./pages/DisplayPage";
 import Footer from "./components/Footer";
-import MapPage from "./components/MapPage";
-import QRPage from "./components/QRPage";
-import ExtraPage from "./components/ExtraPage";
-import HomePage from "./components/HomePage";
-
+import MapPage from "./pages/MapPage";
+import QRPage from "./pages/QRPage";
+import ExtraPage from "./pages/ExtraPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (

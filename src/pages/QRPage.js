@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../styles/QRPage.module.css'
-import QR from './QR'
+import QR from '../components/QR'
 
 export default function QRPage() {
   return (
