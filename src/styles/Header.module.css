@@ -1,0 +1,16 @@
+.container
+{
+    text-align: center;
+}
+
+.header
+{
+    background-color: rgb(33, 36, 33);
+    padding: 1vh;
+    padding-bottom: 0px;
+}
+
+.image{
+    max-height: 150px;
+    margin-top: -20px;  
+}

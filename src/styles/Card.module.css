@@ -1,0 +1,50 @@
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.card1{
+    border: solid 1px black;
+    border-radius: 8px;
+    margin: 20px;
+}
+.card2{
+    border: solid 1px black;
+    border-radius: 3px;
+    margin: 20px;
+    box-shadow: 4px 4px 4px rgb(53, 53, 53);
+}
+
+.cardHeader{
+    /* border: solid 1px black; */
+    margin: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.headerInfo{
+    margin: 10px;
+}
+
+
+.cardImage{
+    /* border: solid 1px black; */
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.image{
+    text-align: center;
+    max-width: 100%;
+}
+
+
+.cardFooter{
+    /* border: solid 1px black; */
+    margin: 10px;
+    margin-top: 0px;
+    text-align: center;
+}
+.footerInfo{
+    margin: 10px;
+}

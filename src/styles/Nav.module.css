@@ -1,0 +1,21 @@
+.container
+{
+    min-height: 3vmax;
+    background-color: rgb(33, 36, 33);
+    margin-top: -20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-evenly;
+}
+
+a{color: white;}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }

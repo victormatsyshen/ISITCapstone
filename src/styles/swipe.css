@@ -1,0 +1,119 @@
+.card-grid {
+  display: grid;
+  align-items: center;
+}
+
+.card {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 700ms;
+  transform: perspective(1000px) rotateY(var(--rotate-y,0)) translateY(var(--translate-y,0));
+  min-height: 530px;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+/* .card:hover {
+  --translate-y: -2px;
+  opacity: 1;
+} */
+
+.card.flip {
+  --rotate-y: 180deg;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  /* padding: 1rem; */
+  backface-visibility: hidden;
+  width: 95%;
+  height: 100%;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+
+
+/* .back {
+  margin: 20px;
+} */
+
+/* Add stuff here */
+
+.card .front {
+  border: 2px solid white;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px rgb(53, 53, 53);
+  background-color: rgb(58, 68, 68);
+  color:white;
+}
+
+.card .back {
+  border: 2px solid white;
+  border-radius: 4px;
+  box-shadow: 4px 4px 4px rgb(53, 53, 53);
+  background-color: rgb(58, 68, 68);
+  color:white;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+  padding: 20px;
+  overflow:auto;
+}
+
+
+
+
+
+
+
+
+.cardHeader{
+  /* border: solid 1px black; */
+  margin: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.headerInfo{
+  margin: 10px;
+}
+
+
+.cardImage{
+  /* border: solid 1px black; */
+  margin: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.image{
+  text-align: center;
+  max-width: 100%;
+  height: 360px;
+  border-radius: 3px;
+}
+.image2{
+  text-align: center;
+  width: 360px;
+  object-fit: contain;
+  border-radius: 3px;
+}
+
+
+.cardFooter{
+  /* border: solid 1px black; */
+  margin: 10px;
+  margin-top: 0px;
+  text-align: center;
+}
+.footerInfo{
+  margin: 10px;
+}
