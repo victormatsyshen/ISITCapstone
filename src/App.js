@@ -2,7 +2,7 @@ import React from "react";
 import style from "./styles/style.css"
 
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import {BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 import Header from "./components/Header";
 import Nav from "./components/Nav";
