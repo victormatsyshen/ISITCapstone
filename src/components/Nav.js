@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import styles from "../styles/Nav.module.css";
+import Login from './Login';
 
 export default function Nav() {
   return (
@@ -13,6 +14,7 @@ export default function Nav() {
                     <li><a href="/home">Home Page</a></li>
                     <li><a href="/map">Map</a></li>
                     <li><a href="/extra">Extra Page</a></li>
+                    <li><Login /></li>
                 </ul>
             </div>
         </BrowserView>

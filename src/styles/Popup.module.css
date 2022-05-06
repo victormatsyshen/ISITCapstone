@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid black 3px;
+    border: solid gray 3px;
     position: fixed;
     width: 80%; /* Full width (cover the whole page) */
     height: 80%; /* Full height (cover the whole page) */

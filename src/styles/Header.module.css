@@ -1,16 +1,29 @@
 .container
 {
+    /*border: 3px solid blue;*/
     text-align: center;
+    
 }
 
 .header
 {
-    background-color: rgb(33, 36, 33);
+    background-color: black;
     padding: 1vh;
-    padding-bottom: 0px;
+    padding-bottom: 2px;
+    background-image: url(../images/crocodile-skin.png);
+
 }
 
 .image{
-    max-height: 150px;
-    margin-top: -20px;  
+    height: 20%;
+    width: 20%;
+    object-fit: cover;  
+}
+
+@media only screen and (max-width: 700px) {
+    .container img {
+        height: 70px;
+        width: 70px;
+        object-fit: cover;
+    }
 }
