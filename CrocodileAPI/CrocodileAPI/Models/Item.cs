@@ -9,6 +9,7 @@ namespace CrocodileAPI.Models
     {
         public int ItemKey { get; set; }
         public int Item_ID { get; set; }
+        public int QR_Code { get; set; }
         public string Item_name { get; set; }
         public string Item_type { get; set; }
         public string Maker { get; set; }
@@ -18,7 +19,7 @@ namespace CrocodileAPI.Models
         public string Accesion_date { get; set; }
         public string Collector { get; set; }
         public string Item_narrative { get; set; }
-        public string Item_Provenance { get; set; }
+        public string Provenance { get; set; }
         public string Cross_references { get; set; }
 
 
