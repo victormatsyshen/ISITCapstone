@@ -1,12 +1,14 @@
 import React,{Component} from "react";
 import { variables } from "./Variables";
-import { useParams } from "react-router-dom";
+
 
 
 
 const queryParams = new URLSearchParams(window.location.search);
 const id = queryParams.get('id');
 console.log(id); // 55 test null
+
+
 export class Single extends Component{
 
     
@@ -19,6 +21,12 @@ export class Single extends Component{
 
         }
     }
+
+    async asyncRefreshList(){
+        const response = await fetch(variables.API_URL+'item'+'/'+ parseInt(id))
+        const json = await response.json();
+        const data = await this.setState({item:json})
+    }
    
     refreshList(){
         
@@ -30,7 +38,7 @@ export class Single extends Component{
         })
     }
     componentDidMount(){
-        this.refreshList();
+        this.asyncRefreshList();
     }
 
     render(){
