@@ -10,7 +10,7 @@ function ByID(){
 
 
     useEffect(()=> {
-        fetch(variables.API_URL+'item')
+        fetch(variables.API_URL+'item'+'/'+ parseInt(id))
         .then(response=>response.json())
         .then(resp=>setPosts(resp))
 
@@ -22,6 +22,7 @@ function ByID(){
                 
                 
             }
+            
         </div>
     )
 }

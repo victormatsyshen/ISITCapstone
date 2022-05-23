@@ -5,6 +5,7 @@ import {Single} from './Single';
 
 import {BrowserRouter, Route, Routes, NavLink} from 'react-router-dom';
 import ByID from './ByID';
+import Images from './Images';
 
 function App() {
   return (
@@ -32,6 +33,11 @@ function App() {
               ByID
             </NavLink>
           </li>
+          <li className='nav-item- m-1'>
+            <NavLink className="btn btn-light btn-outline-primary" to="/images">
+              Images
+            </NavLink>
+          </li>
          
         </ul>
 
@@ -40,6 +46,7 @@ function App() {
         <Route path="/home" element={<Home/>}/>
         <Route path="/single" element={<Single/>}/>
         <Route path="/ByID" element={<ByID/>}/>
+        <Route path="/images" element={<Images/>}/>
         
         
       </Routes>
