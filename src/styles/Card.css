@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    width: 20rem;
+    height: 30rem;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    transition: 700ms;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card figure {
+    /* width: 100%;
+    height: 100%; */
+    position: absolute;
+    margin: 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backface-visibility: hidden;
+}
+
+.card .front {
+    text-align: center; 
+}
+
+.card .front h1, h2 {
+    margin-bottom: 1px;
+}
+
+.card .back {
+    height: 100%;
+    width: 100%;
+    transform: rotateY(180deg);
+    border: 2px solid white;
+    border-radius: 50px;
+
+    box-shadow: 4px 4px 4px rgb(53, 53, 53);
+    background-color: black;
+    color: white;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1rem;
+    overflow: auto;
+}

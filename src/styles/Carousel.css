@@ -1,0 +1,27 @@
+.item {
+    min-height: 40rem;
+    min-width: 20rem;
+    padding: 30px;
+}
+
+.item img {
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 4rem;
+    pointer-events: none;
+}
+
+.inner-carousel {
+    display: flex;
+    background: lightblue;
+}
+
+.carousel {
+    cursor: grab;
+    /* overflow: hidden; */
+    -webkit-overflow-scrolling: touch;
+    background: rgb(241, 207, 218);
+}
+
+
