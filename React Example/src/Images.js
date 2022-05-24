@@ -39,7 +39,8 @@ function Images(){
                 return<img src={url}/>
             })}
 
-            <img src="https://firebasestorage.googleapis.com/v0/b/react-example-photos.appspot.com/o/images%2FAutobots-Logo%20Icon.png?alt=media&token=5bcfa9b8-1322-4951-9da2-5cdabf3f7b0f"/>
+            <img src="https://firebasestorage.googleapis.com/v0/b/the-crocodile-project-4158c.appspot.com/o/Bandana.jpg?alt=media&token=afbe032e-3546-4468-bf88-3231f71e20a8"/>
+            <video src="https://firebasestorage.googleapis.com/v0/b/react-example-photos.appspot.com/o/videos%2F(24)%20Takara%20MP-44%20Optimus%20Prime%20Transformation%20Sequence%20-%20YouTube%20-%20Google%20Chrome%202021-08-17%2014-22-33.mp4?alt=media&token=c3586297-fe5c-4138-bdf5-6d2944e2f1c7"/>
         </div>
     );
 }

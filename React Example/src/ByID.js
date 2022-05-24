@@ -18,9 +18,10 @@ function ByID(){
     return (
         <div className="ByID">
             {
-                post.map(post=><div><p>{`${post.Item_ID}. ${post.Item_narrative}. ${post.Item_type}`}</p></div>)
-                
-                
+               post.map(post => <img src={post.Image_url}/>) 
+            }
+            {
+                post.map(post=><div><p>{` ${post.Item_narrative}. ${post.Item_type}`}</p></div>)
             }
             
         </div>
