@@ -21,6 +21,10 @@ namespace CrocodileAPI.Models
         public string Item_narrative { get; set; }
         public string Provenance { get; set; }
         public string Cross_references { get; set; }
+        public string Image_url { get; set; }
+        public string Video_url { get; set; }
+
+
 
 
     }

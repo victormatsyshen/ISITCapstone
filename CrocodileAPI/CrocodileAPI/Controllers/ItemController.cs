@@ -24,7 +24,7 @@ namespace CrocodileAPI.Controllers
         public JsonResult Get()
         {
             string query = @"
-                           select Item_ID, Item_name,Item_type,Maker,Size_Dimension_Weight,Condition,Accesion_date,Collector,Item_narrative,QR_Code from
+                           select Item_ID, Item_name,Item_type,Maker,Size_Dimension_Weight,Condition,Accesion_date,Collector,Item_narrative,QR_Code,Image_url,Video_url from
                            dbo.Item
 
                             ";
@@ -49,7 +49,7 @@ namespace CrocodileAPI.Controllers
         public JsonResult GetID(int id)
         {
             string query = @"
-                            select Item_ID, Item_name,Item_type,Maker,Size_Dimension_Weight,Condition,Accesion_date,Collector,Item_narrative,QR_Code from
+                            select Item_ID, Item_name,Item_type,Maker,Size_Dimension_Weight,Condition,Accesion_date,Collector,Item_narrative,QR_Code,Image_url,Video_url from
                             dbo.Item
                             where Item_ID=@Item_ID
 
