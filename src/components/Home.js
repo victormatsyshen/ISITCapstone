@@ -3,8 +3,6 @@ import { variables } from "../Variables.js";
 
 export class Home extends Component{
 
-
-
     constructor(props){
         super(props)
 

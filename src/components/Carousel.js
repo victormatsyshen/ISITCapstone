@@ -54,7 +54,7 @@ function Carousel() {
           {post.map((post) => {
             return (
               <motion.div className={`{card ${flip ? "flip" : ""}} item`}>
-                {/* <img src={image} alt="" /> */}
+                {/* <img src={post.Image_url} alt="" /> */}
                 <Card
                   key={post.Item_ID}
                   {...post}

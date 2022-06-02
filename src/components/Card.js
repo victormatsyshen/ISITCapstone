@@ -6,7 +6,8 @@ export default function Card({
     Item_name,
     Item_narrative,
     Item_type,
-    image
+    Image_url,
+    QR_Code
     // frontImageSrc, // front image source
     // backImageSrc // back image source
 }) {
@@ -17,7 +18,7 @@ export default function Card({
                     <div className="card">
                         <figure className="front" onClick={flipCard}>
                             {/* <img src={frontImageSrc} className="guitar" alt="Image 1" /> */}
-                            <img src={image} />
+                            <img src={Image_url} />
                             <h1>{Item_name}</h1>
                             <h2>{Item_type}</h2>
                         </figure>
@@ -27,12 +28,11 @@ export default function Card({
                             <p>{Item_narrative}</p>
 
                             <br />
-                            {/* <div className={styles['container']}>
-                    <ul className={styles['navLinks']}>
-                        <li><a href="/map">Map</a></li>
-                        <li><a href="/qr">QR</a></li>
-                    </ul>
-                </div> */}
+
+                            <ul className="links">
+                                <li><a href="/map">Map</a></li>
+                                <li><a href={QR_Code}>QR</a></li>
+                            </ul>
                         </figure>
                     </div>
                 </div>
