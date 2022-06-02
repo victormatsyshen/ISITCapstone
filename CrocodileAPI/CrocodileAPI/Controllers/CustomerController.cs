@@ -78,6 +78,33 @@ namespace CrocodileAPI.Controllers
                 return new JsonResult("Post Successful");
             }
 
-        
+        [HttpGet("{email}")]
+        public JsonResult GetByEmail(string email)
+        {
+            string query = @"
+                           select CustomerKey,First_name,Last_name,Email,Password from
+                           dbo.Customers
+                           where Email = @Email
+
+                            ";
+            DataTable table = new DataTable();
+            string sqlDataSource = _configuration.GetConnectionString("ItemAppCon");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                {
+                    myCommand.Parameters.AddWithValue("@Email", email);
+                    myReader = myCommand.ExecuteReader();
+                    table.Load(myReader);
+                    myReader.Close();
+                    myCon.Close();
+                }
+            }
+            return new JsonResult(table);
+        }
+
+
     }
 }
