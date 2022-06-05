@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Nav from './components/Nav';
 import HomePage from './pages/HomePage';
 import MapPage from "./pages/MapPage";
+import ExtraPage from "./pages/ExtraPage"
 
 import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
@@ -22,7 +23,7 @@ function App() {
         <Routes>
           <Route exact path='/home' element={<HomePage />} />
           <Route exact path='/map' element={<MapPage />} />
-          {/* <Route exact path='/extra' element={<ExtraPage />} /> */}
+          <Route exact path='/extra' element={<ExtraPage />} />
         </Routes>
       </BrowserView>
       <Footer />
