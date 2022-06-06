@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+
+.navContainer
+{
+    border: 1px dotted white;
+    min-height: 3vmax;
+    background-color: black /*rgb(33, 36, 33)*/;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-evenly;
+}
+
+a{color: white;}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+@media only screen and (max-width: 850px) {
+    .container .navLinks a {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .container .navLinks a {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .container .navLinks a {
+        font-size: 15px;
+    }
+}
