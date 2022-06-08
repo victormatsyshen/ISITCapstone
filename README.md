@@ -6,4 +6,4 @@ https://crocodileapi.azurewebsites.net/api/item/1 is to get info on a specific i
 https://crocodileapi.azurewebsites.net/api/customer is to get all the info on the emails
 https://crocodileapi.azurewebsites.net/api/customer/email is to get a specific email and password
 
-to do this locally just change crocodileapi.azurewebsites to localhost:1625
+to do this locally start the visual project in debug mode
