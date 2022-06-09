@@ -1,0 +1,35 @@
+.container
+{
+    
+    color: white;
+    font-family: "CrocodileFont";
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header
+{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.image{
+    max-height: 52px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.underline{
+    margin-top: 10px;
+    border-bottom: solid 2px white;
+    border-width: 80%;
+}

@@ -1,0 +1,27 @@
+.headerContainer {
+
+}
+
+
+.header
+{
+    background-color: black;
+    padding: 1vh;
+    padding-bottom: 2px;
+    background-image: url(../images/crocodile-skin.png);
+
+}
+
+.crocLogo{
+    height: 20%;
+    width: 20%;
+    object-fit: cover;  
+}
+
+@media only screen and (max-width: 700px) {
+    .container img {
+        height: 70px;
+        width: 70px;
+        object-fit: cover;
+    }
+}

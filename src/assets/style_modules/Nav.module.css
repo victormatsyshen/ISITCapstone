@@ -1,0 +1,27 @@
+.container
+{
+    background-color: rgb(33, 36, 33);
+    margin-top: -30px;
+    font-family: "CrocodileFont";
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-evenly;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.navIcons{
+    width: 24px;
+    padding: 10px;
+}
+
+a{color: white;}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }

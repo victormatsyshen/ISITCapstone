@@ -1,0 +1,46 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "artistName": "Nirvana",
+            "itemName": "Guitar",
+            "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "image": "./assets/guitar.jpg"
+        },
+        {
+            "id": 2,
+            "artistName": "Privatsphare",
+            "itemName": "Concert Poster",
+            "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "image": "./assets/poster1.jpg"
+        },
+        {
+            "id": 3,
+            "artistName": "The Beatles",
+            "itemName": "Broken Drumsticks",
+            "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "image": "./assets/drumsticks.jpg"
+        },
+        {
+            "id": 4,
+            "artistName": "Nirvana2",
+            "itemName": "Guitar2",
+            "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "image": "./assets/singer.jpg"
+        },
+        {
+            "id": 5,
+            "artistName": "Privatsphare2",
+            "itemName": "Concert Poster2",
+            "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "image": "./assets/poster2.jpg"
+        },
+        {
+            "id": 6,
+            "artistName": "The Beatles2",
+            "itemName": "Broken Drumsticks2",
+            "itemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "image": "./assets/guitar.jpg"
+        }
+    ]
+}
