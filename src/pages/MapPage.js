@@ -1,11 +1,14 @@
+// Import base files
 import React from 'react'
-import '../assets/styles/Map.css'
 import Map from '../components/map_Import/Map'
 
+// Import assets and styles
+import styles from '../assets/style_modules/Map.module.css'
+
+// Export Page
 export default function MapPage() {
   return (
-    <div className='mapContainer'>
-      <p>Hi</p>
+    <div className={styles['mapContainer']}>
         <Map />
     </div>
   )

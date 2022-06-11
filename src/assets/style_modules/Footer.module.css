@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+
+.footerContainer
+{
+    text-align: center;
+    flex-shrink: 0;
+    font-family: 'Noto Sans', sans-serif;
+    bottom:0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.footer
+{
+    background-color: black;
+    padding: 1vh;
+    background-image: url('../images/crocodile-skin.png');
+
+}
+
+.footerText{
+    color: white;
+}q
+
+
+@media only screen and (max-width: 850px) {
+    .footerContainer .navLinks a, p {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .footerContainer .navLinks a, p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .footerContainer .navLinks a, p {
+        font-size: 15px;
+    }
+}

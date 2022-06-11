@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect";
-import "../../assets/styles/Nav.css";
+import styles from "../../assets/style_modules/Nav.module.css";
 import "../object_components/Login";
 import MenuIcon from '@mui/icons-material/Menu';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -16,23 +16,22 @@ export default function Nav() {
         <div>
             {/* Browser View */}
             <BrowserView>
-                <nav className="navbar">
-                    <div className="navbar__logo">
-                        <a href="/"><img src={crocLogo} className="crocLogo"></img></a>
+                <nav className={styles['navbar']}>
+                    <div className={styles['navbar__logo']}>
+                        <a href="/"><img src={crocLogo} className={styles['crocLogo']}></img></a>
                     </div>
                     <ul
-                        className={isMobile ? "navbar__menu" : "navbar__menu__mobile"}
-                        onClick={() => setIsMobile(false)}
+                        className={styles['navbar__menu']}
                     >
                         <li><a href="/">Home</a></li>
                         <li><a href="/map">Map</a></li>
                         <li><a href="/extra">Extra</a></li>
                     </ul>
-                    <ul className="navbar__icons">
+                    <ul className={styles['navbar__icons']}>
                         <li><a href="https://mobile.twitter.com/thecrocodile"><TwitterIcon /></a></li>
                         <li><a href="https://www.facebook.com/thecrocodilesea"><FacebookIcon /></a></li>
                     </ul>
-                    <Link to="#" className="navbar__toggleBtn">
+                    <Link to="#" className={styles['navbar__toggleBtn']}>
                         <MenuIcon
                             onClick={() => setIsMobile(!isMobile)}
                         />
@@ -42,8 +41,8 @@ export default function Nav() {
 
             {/* Mobile View */}
             <MobileView>
-                <nav className='navContainer'>
-                    <ul className='navLinks'>
+                <nav className={styles['navContainer']}>
+                    <ul className={styles['navLinks']}>
                         <li><a href="/home">Home Page</a></li>
                         <li><a href="/map">Map</a></li>
                         <li><a href="/extra">Extra Page</a></li>

@@ -1,15 +1,15 @@
 import React from "react";
-import "../../assets/styles/Footer.css";
+import styles from "../../assets/style_modules/Footer.module.css";
 
 export default function Footer() {
     return (
-        <div className="footerContainer">
-            <div className="footer">
+        <div className={styles['footerContainer']}>
+            <div className={styles['footer']}>
                 <ul>
                     <li><a href="/home">Links</a></li>
                     <li><a href="/map">Social Media</a></li>
                 </ul>
-                <p className="footerText">Copyright The Crocodile 2022</p>
+                <p className={styles['footerText']}>Copyright The Crocodile 2022</p>
             </div>
         </div>
     )

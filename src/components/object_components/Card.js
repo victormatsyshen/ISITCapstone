@@ -1,5 +1,6 @@
 import React from "react";
-import "../../assets/styles/Card.css";
+import styles from "../../assets/style_modules/Card.module.css";
+
 
 export default function Card({
     flipCard, // action to handle flipping of card
@@ -13,23 +14,23 @@ export default function Card({
 }) {
     return (
         <>
-            <div className="container">
-                <div className="card-container">
-                    <div className="card">
-                        <figure className="front" onClick={flipCard}>
+            <div className={styles['container']}>
+                <div className={styles['card-container']}>
+                    <div className={styles['card']}>
+                        <figure className={styles['front']} onClick={flipCard}>
                             {/* <img src={frontImageSrc} className="guitar" alt="Image 1" /> */}
                             <img src={Image_url} />
                             <h1>{Item_name}</h1>
                             <h2>{Item_type}</h2>
                         </figure>
 
-                        <figure className="back" onClick={flipCard}>
+                        <figure className={styles['back']} onClick={flipCard}>
                             {/* <img src={backImageSrc} className='image2'></img> */}
                             <p>{Item_narrative}</p>
 
                             <br />
 
-                            <ul className="links">
+                            <ul className={styles['links']}>
                                 <li><a href="/map">Map</a></li>
                                 <li><a href={QR_Code}>QR</a></li>
                             </ul>

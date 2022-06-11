@@ -1,9 +1,10 @@
-import "../../assets/styles/Carousel.css";
+
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import dummy from "../../db/data.json";
 import Card from "../object_components/Card";
 import { variables } from "../../firebase/Variables";
+import styles from "../../assets/style_modules/Carousel.module.css";
 
 
 function Carousel() {
@@ -43,17 +44,17 @@ function Carousel() {
 
 
   return (
-    <div className="wrapper">
+    <div className={styles['wrapper']}>
       {/* <motion.h1 animate={{ x: 250 }}>hello</motion.h1> */}
-      <motion.div ref={carousel} className="carousel" whileTap={{ cursor: "grabbing" }}>
+      <motion.div ref={carousel} className={styles['carousel']} whileTap={{ cursor: "grabbing" }}>
         <motion.div
           drag="x"
           dragConstraints={{ right: 0, left: -width }}
-          className="inner-carousel"
+          className={styles['inner-carousel']}
         >
           {post.map((post) => {
             return (
-              <motion.div className={`{card ${flip ? "flip" : ""}} item`}>
+              <motion.div className={styles['item']}>
                 {/* <img src={post.Image_url} alt="" /> */}
                 <Card
                   key={post.Item_ID}

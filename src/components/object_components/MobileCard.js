@@ -1,8 +1,8 @@
 import React,{useEffect, useState} from "react";
 import { variables } from "../../firebase/Variables";
-import '../../assets/styles/swipe.css'
-import testguitars from '../../assets/images/testpic.png'
+import '../../assets/styles/mainCard.css'
 import styles from "../../assets/style_modules/MobileNav.module.css";
+import card_styles from "../../assets/style_modules/MobileCard.module.css";
 
 export default function MobileCard() {
 
@@ -16,8 +16,8 @@ export default function MobileCard() {
     }
 
     const queryParams = new URLSearchParams(window.location.search);
-    const id = queryParams.get('id');
-    // const id = 1;
+    //const id = queryParams.get('id');
+    const id = 10;
     
 
     const [post,setPosts]=useState([])
@@ -38,12 +38,16 @@ export default function MobileCard() {
             <div className="front" onClick={flipCard}>
 
                 <div className='cardImage'>
-                    <img src={testguitars} className='image'></img>
+                    {
+                    post.map(post => <img src={post.Image_url} className='image'/>) 
+                    }
                 </div>
 
                 <div className='cardHeader'>
                     <div className='headerInfo'>
-                        Guitar Image
+                        {
+                            post.map(post=><div>{` ${post.Item_name}`}</div>)
+                        }
                     </div>
                 </div>
     

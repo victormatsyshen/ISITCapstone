@@ -1,6 +1,7 @@
 import { useState } from "react";
 import GoogleLogin, { GoogleLogout } from "react-google-login";
-import '../../assets/styles/Login.css';
+import styles from "../../assets/style_modules/Login.module.css";
+// import '../../assets/styles/Login.css';
 
 function Login() {
 
@@ -40,7 +41,7 @@ function Login() {
 
   return (
     <div>
-      <div className="authContainer">
+      <div className={styles['authContainer']}>
         {loginData ? (
           <div>
             <h3>Hello, {loginData.name}</h3>

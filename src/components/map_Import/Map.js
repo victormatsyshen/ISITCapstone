@@ -1,8 +1,8 @@
 import { Component } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
-import './assets/css/normalize.css'
-import './assets/css/style.css'
+// import './assets/css/normalize.css'
+// import './assets/css/style.css'
 
 import Header from './pages2/Header';
 import HiddenSVGs from './pages2/HiddenSVGs';
