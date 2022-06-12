@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'CrocodileFont';
+  src: url('../fonts/FranklinGothic-ExtraCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body 
+{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
