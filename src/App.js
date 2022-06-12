@@ -6,27 +6,35 @@ import Footer from './components/Footer';
 import Nav from './components/Nav';
 import HomePage from './pages/HomePage';
 import MapPage from "./pages/MapPage";
-import SignupPage from "./pages/SignupPage";
-import LoginPage from './pages/LoginPage';
+import SignupPage from "./pages/SignupUI";
+import LoginPage from './pages/LoginUI';
 
 import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 import Carousel from './components/Carousel';
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
-let login;
-sessionStorage.setItem(login, "false");
+
+
+const auth = getAuth();
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    const uid = user.uid;
+    // ...
+  } else {
+    setTimeout(() => {
+        window.location.href = "http://localhost:3000/Signup";
+
+    }, 10000);
+  }
+});
+
 
 function App() {
 
-  // if(sessionStorage.getItem(login) === "false"){
-  //   console.log(sessionStorage.getItem(login));
-  //     setTimeout(() => {
-  //       window.location.href = "http://localhost:3000/Signup";
-  //     }, 5000);
-  //     sessionStorage.clear(login);
-  //     console.log("login status:"+sessionStorage.getItem(login));
-  // }
 
   return (
     <BrowserRouter>

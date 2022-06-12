@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect";
 import "../styles/Nav.css";
-import "../components/Login";
 import MenuIcon from '@mui/icons-material/Menu';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -26,7 +25,8 @@ export default function Nav() {
                     >
                         <li><a href="/home">Home</a></li>
                         <li><a href="/map">Map</a></li>
-                        <li><a href="/extra">Extra</a></li>
+                        <li><a href="/signup">Register</a></li>
+                        <li><a href="/login">Sign in</a></li>
                     </ul>
                     <ul className="navbar__icons">
                         <li><a href="https://mobile.twitter.com/thecrocodile"><TwitterIcon /></a></li>

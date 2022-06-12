@@ -1,11 +1,11 @@
 import React from 'react'
-import Login from '../components/LoginPage';
+import FirebaseLogin from '../components/FirebaseLogin'
 //import styles from '../styles/HomePage.module.css'
 
-export default function LoginPage() {
+export default function LoginUI() {
   return (
     <div>
-      <Login />
+      <FirebaseLogin />
     </div>
   )
 }
