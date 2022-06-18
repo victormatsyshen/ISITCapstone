@@ -22,59 +22,31 @@ GO
 USE CrocodileDB; 
 GO 
 
---Clear the tables 
-GO 
-CREATE PROC pTruncateTables 
-AS 
-BEGIN 
-	BEGIN TRY 
-		TRUNCATE TABLE [CrocodileDB].[dbo].[Item] 
-	END TRY 
-	BEGIN CATCH 
-		PRINT Error_Message() 
-	END CATCH 
-END;
-GO
 
 -- Items Table 
-GO 
-CREATE PROC pItemTable 
-AS 
-BEGIN 
-	BEGIN TRY
-		CREATE TABLE [Item]( 
-		 [ItemKey]				 int IDENTITY		NOT NULL 
-	    ,[Item_ID]				 int				NOT NULL 
-		,[QR_Code]				 nvarchar(25)		NOT NULL					 
-	    ,[Item_name]			 nvarchar(25)		NOT NULL 
+
+CREATE TABLE [Item]( 
+	[ItemKey]			 int IDENTITY		NOT NULL 
+	,[Item_ID]			 int			NOT NULL 
+	,[QR_Code]			 nvarchar(25)		NOT NULL					 
+	,[Item_name]			 nvarchar(25)		NOT NULL 
         ,[Item_type]			 nvarchar(25)		NOT NULL 
-        ,[Maker]				 nvarchar(25)		NOT NULL 
-	    ,[Material]				 nvarchar(25)		NOT NULL 
-        ,[Size_Dimension_Weight] nvarchar(25)	
+        ,[Maker]			 nvarchar(25)		NOT NULL 
+	,[Material]			 nvarchar(25)		NOT NULL 
+        ,[Size_Dimension_Weight] 	 nvarchar(25)	
         ,[Condition]			 nvarchar(25)				 
-        ,[Accesion_date]		 date				NOT NULL 
+        ,[Accesion_date]		 date			NOT NULL 
         ,[Collector]			 nvarchar(25)		NOT NULL 
         ,[Item_narrative]		 nvarchar(700)		NOT NULL	 
         ,[Provenance]			 nvarchar(700)				 
         ,[Cross_references]		 nvarchar(700)
-		,[Image_url]			 nvarchar(700)
-		,[Video_url]			 nvarchar(700)
-		PRIMARY KEY (ItemKey)); 
-	END TRY 
-	BEGIN CATCH 
-		PRINT Error_Message() 
-	END CATCH 
-END 
-GO 
+	,[Image_url]			 nvarchar(700)
+	,[Video_url]			 nvarchar(700)
+	PRIMARY KEY (ItemKey)); 
 
- 
 
-GO 
+-- INSERTING DATA TO ITEM TABLE
 
-CREATE PROC pData 
-AS 
-BEGIN 
-	BEGIN TRY 
 	INSERT INTO CrocodileDB.dbo.Item VALUES ('1', 'qrco.de/bcyBr2', 'Drum Head', 'Object', 'Tama', 'Mylar', '25.5 x 25.5 x 2.5 inches', 'Damaged', '04/10/1992', 'Graham Graham', 'Nirvana drummer, Dave Grohl, favored TAMA drumheads in the 1990s.  TAMA is a private musical instruments company founded in 1974 and owned by corporate parent company Hoshino Gakki.  ', 'Original performance video at the origi(if we viewed the original performance video you might be able to add in the above detail – exactly when the drum head was wrecked. Research gold!', 'Original performance video at the original Crocodile Café (if we viewed the original performance video you might be able to add in the above detail – exactly when the drum head was wrecked. Research gold!), additional historic information (SUCH AS?), addition objects in the collection (BE SPECIFIC)','','')	 
 	INSERT INTO CrocodileDB.dbo.Item VALUES ('2', 'qrco.de/bcz1kK', 'Chest Hair', 'Object', 'Kurt Cobain', 'Hair', '', 'Good Condition', '10/13/1998', 'Lorenzo de Medici', 'Chest hair is hair that grows on the chest of a male in the region between the neck and the abdomen. Chest hair develops during and after puberty along with other types of androgenic hair.', 'Although vellus hair is already present in the area in childhood, chest hair is the terminal hair that develops as an effect of rising levels of androgens (primarily testosterone and its derivatives) due to puberty.', 'Chest hair may occur on each of these areas independent from the others, making for a total of 15 combinations in addition to the apilose (bare) pattern. Hair is said to occur on both the pectoral and circumareolar areas when there is hair around the nipples and on the breast, but these areas are not connected.','','')	
 	INSERT INTO CrocodileDB.dbo.Item VALUES ('3', 'qrco.de/bcz1km', 'Microphone', 'Object', 'Sennheiser', 'Metal', '0.72 lb', 'Good Condition', '09/16/2000', 'Sir Thomas Roe', 'A microphone, colloquially called a mic or mike is a transducer that converts sound into an electrical signal. Microphones are used in many applications such as telephones, hearing aids, public address systems for concert halls and public events, motion picture production, live and recorded audio engineering, sound recording, two-way radios, megaphones, and radio and television broadcasting.', 'In order to speak to larger groups of people, a need arose to increase the volume of the human voice. The earliest devices used to achieve this were acoustic megaphones. Some of the first examples, from fifth century BC Greece, were theater masks with horn-shaped mouth openings that acoustically amplified the voice of actors in amphitheaters.', 'Zimmer, Ben (29 July 2010). "How Shoul be Abbreviated?". The New York Times. Retrieved 10 September 2010. Montgomery, Henry C (1959). "Amplification and High Fidelity in the Greek Theater". The Classical Journal. 54 (6): 242–245. JSTOR 3294133','','')	 
@@ -90,37 +62,7 @@ BEGIN
 	INSERT INTO CrocodileDB.dbo.Item VALUES ('13', 'qrco.de/bcz1nZ', 'Glass', 'Object', 'Glass', 'Glass', '2.45 lbs', 'Good Condition', '09/27/1992', 'Alberto Giacometti', 'Glass is a non-crystalline, often transparent amorphous solid, that has widespread practical, technological, and decorative use in, for example, window panes, tableware, and optics. Glass is most often formed by rapid cooling (quenching) of the molten form; some glasses such as volcanic glass are naturally occurring. The most familiar, and historically the oldest, types of manufactured glass are "silicate glasses" based on the chemical compound silica (silicon dioxide, or quartz), the primary constituent of sand. Soda-lime glass, containing around 70% silica, accounts for around 90% of manufactured glass. ', 'Glass is an amorphous solid. Although the atomic-scale structure of glass shares characteristics of the structure of a supercooled liquid, glass exhibits all the mechanical properties of a solid.', 'Cusack, N.E. (1987). The physics of structurally disordered matter: an introduction. Adam Hilger in association with the University of Sussex press. p. 13. ISBN 978-0-85274-829-9.','','')	 
 	INSERT INTO CrocodileDB.dbo.Item VALUES ('14', 'qrco.de/bcz1nk', 'Short Video', 'Video', 'Billie Eilish', '', '15 MB', 'Damaged', '10/10/1995', 'Andy Warhol', 'With the spread of global high-speed internet, video clips have become very popular online. By mid-2006 there were tens of millions of video clips available online, with new websites springing up focusing entirely on offering free video clips to users and many established and corporate sites adding the ability to clip existing video content on their websites. Whereas most of this content is non-exclusive and available on competing sites, some companies produce their own videos and do not need to rely on the work of outside companies or amateurs.', 'The use of digital techniques in video created digital video. It could not initially compete with analog video, due to early digital uncompressed video requiring impractically high bitrates. Practical digital video was made possible with discrete cosine transform (DCT) coding, a lossy compression process developed in the early 1970s.', 'Elen, Richard. "TV Technology 10. Roll VTR". Archived from the original on 2011-10-27','','')
 	INSERT INTO CrocodileDB.dbo.Item VALUES ('15', 'qrco.de/bcz1nq', 'Headband', 'Object', 'Nike', 'Fabric', '2 x 6.7 inches', 'Good Condition', '07/01/1992', 'Mark Rothko', 'A headband is a clothing accessory worn in the hair or around the forehead, usually to hold hair away from the face or eyes. Headbands generally consist of a loop of elastic material or a horseshoe-shaped piece of flexible plastic or metal. They come in assorted shapes and sizes and are used for both fashion and practical or utilitarian purposes.', 'The beginning of headbands was no later than around 475 BC to 330 BC, with the ancient Greeks, who wore hair wreaths. The Greeks and Romans wore these pieces for very special occasions or an important event. Cultures such as the Etruscans and Romans started to decorate their wreaths with jewels made up of gold and silver.', '"A Feather in Your Cap: How Women Wore Their Hats, from Marie Antoinette to WWII". March 16, 2010. Retrieved 27 January 2012','','')	
-	END TRY 
-	BEGIN CATCH 
-		PRINT Error_Message() 
-	END CATCH 
-END; 
-GO 
 
-CREATE PROC CustomerTable
-AS
-BEGIN
-	BEGIN TRY
-		CREATE TABLE [Customers](
-			[CustomerKey]	int IDENTITY	NOT NULL
-		   ,[First_name]	nvarchar(25)	NOT NULL
-		   ,[Last_name]		nvarchar(25)	NOT NULL
-		   ,[Email]			nvarchar(50)	NOT NULL
-		   ,[Password]		nvarchar(25)	NOT NULL
-			PRIMARY KEY (CustomerKey));
-	END TRY
-	BEGIN CATCH
-		PRINT Error_message()
-	END CATCH
-END
-GO
-
-EXEC pTruncateTables; 
-EXEC pItemTable; 
-EXEC pData; 
-EXEC CustomerTable;
-
- 
 
 SELECT * 
 FROM Item;
