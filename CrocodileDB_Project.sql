@@ -1,6 +1,6 @@
---Crocodile Startup Database 
---Oscar Cruz and Ryan Luu 
---05/22/2022 
+--Crocodile Items Database 
+--Oscar Cruz
+--Ryan Luu 
 
 USE master; 
 GO 
