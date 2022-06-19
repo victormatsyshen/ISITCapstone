@@ -71,6 +71,7 @@ GO
 
 GO 
 
+--Insert Data to items table
 CREATE PROC pData 
 AS 
 BEGIN 
@@ -97,11 +98,11 @@ BEGIN
 END; 
 GO 
 
-
+--Execute store Procedures
 EXEC pTruncateTables; 
 EXEC pItemTable; 
 EXEC pData; 
  
-
+--Query to show all the items (can be erased)
 SELECT * 
 FROM Item;
