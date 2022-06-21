@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap");
+
+.sign-in-wrapper {
+  margin: 0;
+  padding: 0;
+  padding: 4em 0 11em 0;
+}
+
+.sign-in {
+  width: 300px;
+  background: rgb(49, 49, 49);
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.sign-in h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.input-box {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #999;
+  outline: none;
+}
+
+.sign-in-btn {
+  background-color: #247c54;
+}
+
+.sign-out-btn {
+  background-color: rgb(99, 99, 99);
+}
+
+.sign-in-btn,
+.sign-out-btn {
+  color: white;
+  width: 92%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+img {
+  width: 200px;
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+
+hr {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  width: 80%;
+}
+
+.footer {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.7);
+  display: inline;
+  text-decoration: none;
+  margin: 4px 0 10px 0;
+  margin: 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

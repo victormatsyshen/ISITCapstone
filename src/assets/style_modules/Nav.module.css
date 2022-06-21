@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+/* Nav container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--desktop-nav-background-color);
+  height: 12vh;
+}
+
+/* Nav Links */
+.navbar_link{
+  text-decoration: none;
+  color: var(--desktop-nav-text-color);
+  font-family: var(--desktop-nav-text-font);
+  font-size: var(--desktop-nav-text-fontsize);
+  border-bottom: solid 2px transparent;
+}
+
+.navbar_link:hover{
+  border-bottom: solid 2px var(--desktop-nav-text-hover-color);
+  cursor: pointer;
+}
+
+/* Logo with image */
+.navbar__logo .crocLogo {
+  height: 8rem;
+  width: 8rem;
+  object-fit: cover;
+  margin-left: 0.7vw;
+}
+
+/* Menu */
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar__menu li {
+  padding: 8px 18px;
+  
+}
+
+/* .navbar__menu li:hover {
+  background-color: var(--desktop-nav-text-hover-color);
+  border-radius: 4px;
+
+} */
+
+.navbar_icons {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+/* Icons */
+.navbar_icons li {
+  padding: 10px;
+  margin-right: 30px;
+}
+
+.navbar_image{
+  color: var(--desktop-nav-text-color);
+}
+
+.navbar_image:hover{
+  color: var(--desktop-nav-text-hover-color);
+}
+
+/* Toggle button */
+.navbar_toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: white;
+}

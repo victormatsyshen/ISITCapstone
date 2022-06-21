@@ -1,0 +1,4 @@
+.homeContainer{
+    height: 74vh;
+    background-color: var(--desktop-home-background-color);
+}

@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
+
+.card-grid {
+  display: grid;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 700ms;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
+  /* min-height: 540px;
+  margin: 20px; */
+  height: 70vh;
+  margin-top: 2vh;
+}
+
+.card.flip {
+  --rotate-y: 180deg;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 93%;
+  height: 100%;
+}
+
+.card .front {
+  color: white;
+  /* border: 2px solid white;
+  border-radius: 12px; */
+  border: var(--mobile-card-border-style);
+  border-radius: var(--mobile-card-border-radius);
+  background-color: rgb(55, 58, 58);
+  overflow: hidden;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.card .back {
+  border: var(--mobile-card-border-style);
+  border-radius: var(--mobile-card-border-radius);
+  box-shadow: 4px 4px 4px rgb(53, 53, 53);
+  color: white;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*   */
+  overflow: auto;
+}
+
+/* Front side of the card */
+.cardHeader {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  font-family: "CrocodileFont";
+  letter-spacing: 2px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.00), rgba(0, 0, 0, 0.966));
+}
+
+.headerInfo {
+  font-size: 2.6em;
+  position: fixed;
+  bottom: 4%;
+  right: 10%;
+}
+
+.footerInfo {
+  font-size: 1em;
+  padding: 24px;
+  padding-bottom: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.cardImage {
+  /* border: solid 1px black; */
+  /* margin: 10px; */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  object-fit: cover;
+}
+.image {
+  text-align: center;
+  width: 100%;
+  height: 70vh;
+  border-radius: 3px;
+}
+.image2 {
+  text-align: center;
+  width: 360px;
+  object-fit: contain;
+  border-radius: 3px;
+}
+
+/* Back side of the card */
+.cardBackHeaderImage{
+  margin: 12px;
+  text-align: center;
+  overflow: hidden;
+  /* border-bottom: solid 2px white; */
+  border: solid 2px white;
+  border-radius: 3px;
+}
+
+.backHeaderImage{
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  
+}
+
+.backHeader{
+  position: absolute;
+  margin: auto;
+  top: 5%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+
+  font-size: 38px;
+  font-family: "CrocodileFont";
+  letter-spacing: 2px;
+  
+}
+
+.backInfo{
+  margin: 12px;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Narrow';
+  letter-spacing: 1px;
+}
+
+
+
+
+
+.slide{
+  padding: 15;
+  height: 100%;
+}
+
+.slide1{
+  /* background-color: rgb(50, 63, 63); */
+  background-image: linear-gradient(to bottom right, rgb(26, 24, 24), rgb(53, 53, 45));
+  border: solid 2px white;
+  border-radius: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.slide2{
+  background-image: linear-gradient(to bottom right, rgb(26, 24, 24), rgb(53, 53, 45));
+  border: solid 2px white;
+  border-radius: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.slide3{
+  background-image: linear-gradient(to bottom right, rgb(26, 24, 24), rgb(53, 53, 45));
+  border: solid 2px white;
+  border-radius: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.sliderImage{
+  text-align: center;
+  width: 100%;
+  height: 285px;
+  object-fit: contain;
+  border-radius: 3px;
+}
+
+.backTextWrapper{
+  padding: 8px;
+}
+
+.infoHeader{
+  font-family: CrocodileFont;
+  font-size: 26px;
+  margin-bottom: 12px;
+}

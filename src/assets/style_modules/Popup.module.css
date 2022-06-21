@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+body.active-popup {
+  overflow-y: hidden;
+}
+
+.btn-popup {
+  display: block;
+  font-size: 16px;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.popup {
+  z-index: 1;
+}
+
+.popup,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+button {
+  all: unset;
+}
+
+.close-popup {
+  position: absolute;
+  top: 85px;
+  right: 35px;
+  cursor: pointer;
+  padding: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* For small screen */
+@media screen and (max-width: 768px) {
+  .btn-popup {
+    width: 100%;
+  }
+}

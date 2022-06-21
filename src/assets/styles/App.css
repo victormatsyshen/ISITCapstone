@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+}
+
+/* Global */
+:root {
+
+  /* Desktop Nav Component*/
+  --desktop-nav-background-color: rgb(0, 0, 0); /* Div Background Color*/
+  --desktop-nav-text-color:rgb(255, 255, 255); /* Normal Text Color*/
+  --desktop-nav-text-active-color:rgb(87, 199, 43); /* Active Page Text Color*/
+  --desktop-nav-text-hover-color:rgb(87, 199, 43); /* Text Hover Background Color*/
+  --desktop-nav-text-font: CrocodileFont; /* Text Font*/
+  --desktop-nav-text-fontsize: 2rem; /* Text Font Size*/
+
+  /* Desktop Carousel Component*/
+  --desktop-home-background-color: rgb(0, 0, 0); /* Div Background Color*/
+
+  /* Desktop Card Component*/
+  --desktop-card-border-radius: 12px; /* Card Border Curve*/
+  --desktop-card-border-style: solid 2px white; /* Card Border Type, Width, Color*/
+  --desktop-card-text-color: rgb(255, 255, 255); /* Card Text Color*/
+  --desktop-card-back-color: rgb(0, 0, 0); /* Card Back Color*/
+
+  /* Desktop Footer Component*/
+  --desktop-footer-background-color: rgb(29, 27, 27); /* Div Background Color*/
+  --desktop-footer-text-color:rgb(255, 255, 255); /* Normal Text Color*/
+  --desktop-footer-border-color: transparent; /* Div Background Color*/
+  --desktop-footer-link-color:rgb(82, 201, 35); /* Link Color*/
+  --desktop-footer-link-hover-color:rgb(243, 240, 51); /* Link Hover Color*/
+
+ 
+
+ /* Mobile Card Component*/
+ --mobile-card-border-radius: 12px; /* Card Border Curve*/
+ --mobile-card-border-style: solid 2px white; /* Card Border Type, Width, Color*/
+ --mobile-card-text-color: rgb(255, 255, 255); /* Card Text Color*/
+ --mobile-card-back-color: rgb(0, 0, 0); /* Card Back Color*/
+
+ /* Mobile Nav Component*/
+ --mobile-nav-background-color: rgb(0, 0, 0); /* Div Background Color*/
+ --mobile-nav-image-color: rgb(0, 0, 0); /* Div Background Color*/
+ --mobile-nav-image-active-color: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%); /* Div Background Color*/
+
+}
