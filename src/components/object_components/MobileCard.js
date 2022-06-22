@@ -94,37 +94,37 @@ export default function MobileCard() {
                         <br/>
                         <div className="infoHeader">Maker</div>
                         {
-                            post.map(post=><div>{`Maker: ${post.Maker}`}</div>)
+                            post.map(post=><div>{`${post.Maker}`}</div>)
                         }
                         <br/>
                         <div className="infoHeader">Collector</div>
                         {
-                            post.map(post=><div>{`Collector: ${post.Collector}`}</div>)
+                            post.map(post=><div>{`${post.Collector}`}</div>)
                         }
                         <br/>
                         <div className="infoHeader">Condition</div>
                         {
-                            post.map(post=><div>{`Condition: ${post.Condition}`}</div>)
+                            post.map(post=><div>{`${post.Condition}`}</div>)
                         }
                         <br/>
                         <div className="infoHeader">Material</div>
                         {
-                            post.map(post=><div>{`Material: ${post.Material}`}</div>)
+                            post.map(post=><div>{`${post.Material}`}</div>)
                         }
                         <br/>
                         <div className="infoHeader">Size Dimensions</div>
                         {
-                            post.map(post=><div>{`Size_Dimensions: ${post.Size_Dimension_Weight}`}</div>)
+                            post.map(post=><div>{`${post.Size_Dimension_Weight}`}</div>)
                         }
                         <br/>
                         <div className="infoHeader">Provenance</div>
                         {
-                            post.map(post=><div>{`Provenance: ${post.Provenance}`}</div>)
+                            post.map(post=><div>{`${post.Provenance}`}</div>)
                         }
                         <br/>
                         <div className="infoHeader">Cross Referances</div>
                         {
-                            post.map(post=><div>{`Cross_referances: ${post.Cross_references}`}</div>)
+                            post.map(post=><div>{`${post.Cross_references}`}</div>)
                         }
                         <br/>
 

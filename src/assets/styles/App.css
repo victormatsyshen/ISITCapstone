@@ -29,8 +29,6 @@ body {
   --desktop-footer-link-color:rgb(82, 201, 35); /* Link Color*/
   --desktop-footer-link-hover-color:rgb(243, 240, 51); /* Link Hover Color*/
 
- 
-
  /* Mobile Card Component*/
  --mobile-card-border-radius: 12px; /* Card Border Curve*/
  --mobile-card-border-style: solid 2px white; /* Card Border Type, Width, Color*/

@@ -1,5 +1,18 @@
 .container
 {
-    border: solid 1px black;
+    
     min-height: 3vmax;
+}
+
+.qrInfo{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: CrocodileFont;
+    font-size: 24px;
+}
+
+.qr{
+    border: solid 1px rgb(255, 255, 255);
 }

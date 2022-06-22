@@ -451,18 +451,18 @@ button:focus {
 /* Level map */
 
 .map__ground {
-	fill: #252525;;
+	fill: #131212;;
 }
 
 .map__outline {
 	-webkit-transition: fill 0.3s;
 	transition: fill 0.3s;
-	fill: #bbb;
+	fill: rgb(138, 143, 138);
 }
 
 .level:hover .map__outline,
 .level--current .map__outline {
-	fill: #a6a3a8;
+	fill: #d3cece;
 }
 
 .map__tree {
@@ -500,10 +500,10 @@ button:focus {
 
 .content__item {
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	width: 100%;
 	height: 100%;
-	padding: 1em;
+	padding: 20px;
 	text-align: center;
 	background: #d7d7dc;
 	-webkit-transition: -webkit-transform 0.8s;

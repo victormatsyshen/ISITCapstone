@@ -11,6 +11,7 @@ class MallNav extends Component {
 
         }
     }
+    
 
     componentDidMount() {
 
@@ -21,11 +22,12 @@ class MallNav extends Component {
 
     
 
-render () {
+render () { 
+    
 
     return (
         <nav className="mallnav mallnav--hidden">
-            <Link className="boxbutton mallnav__button--up" aria-label="Go up" to={'/map/'}>
+            <Link className="boxbutton mallnav__button--up" aria-label="Go up" to={`/map/`}>
                 <svg className="icon icon--angle-down"><use xlinkHref="#icon-angle-up"></use></svg>
             </Link>
             

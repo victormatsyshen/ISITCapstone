@@ -73,7 +73,26 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1536px) {
+  .wrapper {
+    padding: 0px 20px 10px 20px;
+  }
+  .item {
+    height: 26rem;
+    margin: 2em 1em;
+  }
+  .carousel {
+    padding-top: 8%;
+    width: 65%;
+    /* background: rgb(241, 207, 218); */
+  }
+  .inner-carousel {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media screen and (max-width: 1367px) {
   .wrapper {
     padding: 0px 20px 40px 20px;
   }
@@ -83,7 +102,7 @@
   }
   .carousel {
     padding-top: 8%;
-    width: 70%;
+    width: 72%;
     /* background: rgb(241, 207, 218); */
   }
 }

@@ -1,13 +1,19 @@
 import React from 'react'
-import '../assets/style_modules/QRPage.module.css'
+import styles from'../assets/style_modules/QRPage.module.css'
 import QR from '../components/object_components/QR'
 
 export default function QRPage() {
   return (
     <div className="qrContainer">
-        <p>QR Page</p>
-        <p>Scan a display QR code!</p>
-        <QR />
+        <div className={styles["qrInfo"]}>
+          <p>Scan a Display QR code.</p>
+          <p>Camera access needs to be Allowed.</p>
+        </div>
+        
+        <div className={styles["qr"]}>
+          <QR />
+        </div>
+        
     </div>
   )
 }

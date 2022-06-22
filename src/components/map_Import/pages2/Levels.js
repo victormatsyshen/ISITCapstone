@@ -1,6 +1,6 @@
 import $ from "jquery";
 import { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 
 
@@ -211,6 +211,8 @@ class Levels extends Component {
     
 render () {
 
+	
+
 	return (
 		<div className="levels">
 			<div className="level level--1">
@@ -375,7 +377,7 @@ render () {
 							<svg className="icon icon--logo icon--eggplant"><use xlinkHref="#icon-eggplant"></use></svg>
 						</span>
 					</Link>
-					<Link className="pin pin--2-6" data-category="1" data-space="2.06" to={'/map/Superfood'} aria-label="Pin for Superfood">
+					<Link className="pin pin--2-6" data-category="1" data-space="2.06" to={'/map/Superfood/'} aria-label="Pin for Superfood">
 						<span className="pin__icon">
 							<svg className="icon icon--pin"><use xlinkHref="#icon-pin"></use></svg>
 							<svg className="icon icon--logo icon--strawberry"><use xlinkHref="#icon-strawberry"></use></svg>
@@ -420,7 +422,7 @@ render () {
 					<polygon data-space="3.05" points="356.2,787.4 414.9,584.4 275.1,584.4 275.1,787.4 " className="map__space" />
 					<rect data-space="3.01" x="49.4" y="12.6" width="312.7" height="343" className="map__space" /> */}
 					<polygon points="1187.28 12.59 49.37 12.59 49.37 530 10 530 10 600 49.37 600 49.37 787.41 1187.28 787.41" class="map__ground" />
-					<path d="M 1187.28 12.59 V 787.41 H 806 V 608 H 741 V 365 H 548 V 356 H 544 H 647 V 302 H 481 V 11 H 491 V 157 H 802 V 136 H 1085 V 195 H 892 V 235 H 1190 V 245 H 882 V 184 H 1075 V 147 H 812 V 168 H 493 V 292 H 753 V 317 H 739 V 303 H 660 V 356 H 753 V 596 H 1190 V 608 H 816 V 787 H 270 V 482 H 652 V 787 H 663 V 469 H 271 V 363 H 78 H 55 V 375 H 261 V 788 H 57 V 597 H 146 V 788 H 154 V 597 H 224 V 545 V 407 H 56 V 419 H 213 V 583 H 12 V 532 H 56 V 17 M 1200 0 H 535.36 H 450.09 V 0 H 44 V 517 H -3 V 597 H 45 V 800 H 365.8 H 545.44 h 505.56 H 1200 V 0 h 0 Z" class="map__outline" />
+					<path d="M 1187.28 12.59 V 194 H 1187 V 238 H 1187 V 450 H 1182 H 1059 V 315 H 1134 V 230 H 1024 V 172 H 297 H 661 L 660 255 C 791 362 882 302 915 253 H 933 C 844 382 725 322 657 276 H 548 V 190 H 528 V 172 H 297 H 346 V 249 H 325 V 264 H 345 C 400 294 363 336 345 358 H 359 V 359 C 390 313 397 285 356 249 V 236 H 295 V 359 H 282 V 157 H 1039 H 974 V 100 H 785 V 153 H 1040 V 247 H 1122 V 298 H 1044 V 465 L 1036 489 L 1046 494 L 1058 465 H 1186 V 787.41 H 993 H 229 H 278 V 468 H 296 V 787 H 353 V 565 H 1001 L 1020 516 L 1027 523 L 1012 564 V 786 H 824 V 787 H 62 V 599 H 180 V 582 H 165 V 260 H 102 V 160 H 179 V 90 H 389 V 15 H 401 H 685 V 107 V 108 V 110 H 700 V 14 H 195 V 179 H 116 V 240 H 182 V 581 H 11 V 529 H 62 V 122 H 62 V 308 H 62 V 127 H 62 V 14 H 236 V 14 H 798 H 1184 M 1200 0 H 535.36 H 450.09 V 0 H 47 V 513 H -2 V 599 H 46 V 800 H 545.44 h 505.56 H 1200 V 0 h 0 Z" class="map__outline" />
 				</svg>
 				<div className="level__pins">
 					<Link className="pin pin--3-1" data-category="1" data-space="3.01" to={'/map/Oolong-House'} aria-label="Pin for Oolong House">
@@ -494,7 +496,7 @@ render () {
 					<rect data-space="4.04" x="855.4" y="423.2" width="180.6" height="364.2" className="map__space" />
 					<polygon points="613.2,747 846.6,658.6 846.6,787.4 627.8,787.4" className="map__space" /> */}
 					<polygon points="1187.28 12.59 49.37 12.59 49.37 530 10 530 10 600 49.37 600 49.37 787.41 1187.28 787.41" class="map__ground" />
-								<path d="M 1187.28 12.59 V 194 H 970 V 549 H 974 V 201 H 1187 V 238 H 974 V 246 H 1187 V 387 H 974 V 395 H 1186 V 538 H 974 V 549 H 1187 V 787.41 H 993 V 588 H 226 V 595 H 985 V 787 H 824 V 595 H 817 V 787 H 628 V 595 H 621 V 787 H 426 V 595 H 417 V 787 H 233 V 595 H 226 V 788 H 62 V 582 H 11 V 529 H 62 H 246 V 522 V 122 H 62 V 308 H 240 V 299 H 62 V 127 H 240 V 299 V 516 H 62 V 14 H 236 V 105 H 243 V 14 H 376 V 168 V 221 C 583 223 565 442 374 423 V 545 H 596 H 804 H 918 V 438 V 167 V 216 H 379 V 167 H 1007 V 14 H 588 V 160 H 387 V 14 H 596 V 14 H 798 V 160 H 596 V 14 H 805 V 14 H 996 V 160 H 805 V 14 H 1003 V 14 M 1200 0 H 535.36 H 450.09 V 0 H 47 V 513 H -2 V 599 H 46 V 800 H 545.44 h 505.56 H 1200 V 0 h 0 Z" class="map__outline" />
+								<path d="M 1187.28 12.59 V 194 H 970 V 549 H 974 V 201 H 1187 V 238 H 974 V 246 H 1187 V 387 H 974 V 395 H 1186 V 538 H 974 V 549 H 1187 V 787.41 H 993 V 588 H 226 V 595 H 985 V 787 H 824 V 595 H 817 V 787 H 628 V 595 H 621 V 787 H 426 V 595 H 417 V 787 H 233 V 595 H 226 V 788 H 62 V 582 H 11 V 529 H 62 H 246 V 522 V 122 H 62 V 308 H 240 V 299 H 62 V 127 H 240 V 299 V 516 H 62 V 14 H 236 V 105 H 243 V 14 H 376 V 168 V 221 C 583 223 565 442 374 423 V 545 H 596 H 804 H 918 V 438 V 167 V 216 H 556 V 433 V 223 H 904 V 407 H 563 H 712 V 227 V 232 H 723 V 535 H 712 V 225 H 566 H 900 V 534 H 381 H 385 H 379 V 536 V 431 H 904 V 215 H 375 V 167 H 1007 V 14 H 588 V 160 H 387 V 14 H 596 V 14 H 798 V 160 H 596 V 14 H 805 V 14 H 996 V 160 H 805 V 14 H 1003 V 14 M 1200 0 H 535.36 H 450.09 V 0 H 47 V 513 H -2 V 599 H 46 V 800 H 545.44 h 505.56 H 1200 V 0 h 0 Z" class="map__outline" />
 				</svg>
 				<div className="level__pins">
 					<Link className="pin pin--4-1" data-category="1" data-space="4.01" to={'/map/Cold-Soup-Kitchen'} aria-label="Pin for Cold Soup Kitchen">

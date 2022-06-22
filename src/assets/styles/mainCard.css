@@ -198,5 +198,7 @@
 .infoHeader{
   font-family: CrocodileFont;
   font-size: 26px;
+  border-bottom: 2px solid white;
   margin-bottom: 12px;
+  
 }

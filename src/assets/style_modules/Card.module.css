@@ -100,10 +100,11 @@
 }
 
 .backBlurWrapper{
-  height: 10vh;
+  height: 120px;
   width: 100% ;
   overflow: hidden;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .backBlurImage{
@@ -117,11 +118,10 @@
 
 .backHeader{
   position: absolute;
-  top: 3vh;
+  top: 20px;
   left: 0;
   right: 0;
   text-align: center;
-
   font-size: 38px;
   font-family: "CrocodileFont";
   letter-spacing: 1.5px;

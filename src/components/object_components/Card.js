@@ -8,6 +8,8 @@ export default function Card({
     Item_narrative,
     Item_type,
     Image_url1,
+    Maker,
+    Collector,
     QR_Code
     // frontImageSrc, // front image source
     // backImageSrc // back image source
@@ -31,11 +33,17 @@ export default function Card({
                             </div>
                             <div className={styles['backContent']}>
                                 <br/>
-                                <div className={styles['backItemHeader']}>Narrative</div>
+                                <div className={styles['backItemHeader']}>Information</div>
                                 {Item_narrative}
                                 <br/><br/><br/>
                                 <div className={styles['backItemHeader']}>Type</div>
                                 {Item_type}
+                                <br/><br/><br/>
+                                <div className={styles['backItemHeader']}>Maker</div>
+                                {Maker}
+                                <br/><br/><br/>
+                                <div className={styles['backItemHeader']}>Collector</div>
+                                {Collector}
                                 <br/><br/><br/>
                             </div>
                         </figure>

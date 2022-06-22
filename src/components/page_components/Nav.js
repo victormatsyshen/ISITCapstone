@@ -68,7 +68,7 @@ export default function Nav() {
               </NavLink>
             </li>
             <li>
-              <NavLink to='/extra' className={navstyles["navbar_link"]}
+              <NavLink to='/info' className={navstyles["navbar_link"]}
               style={({ isActive }) => ({
                 color: isActive ? 'var(--desktop-nav-text-active-color)' : 'var(--desktop-nav-text-color)',
                 borderBottom: isActive ? '2px solid' : '',

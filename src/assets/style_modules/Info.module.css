@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+.pageInfo{
+    height: 74vh;
+}
+
+.infoLinks{
+    height: 10vh;
+    font-family: CrocodileFont;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+}
+
+a{
+    color: var(--desktop-footer-link-color);
+}
+a:hover
+{
+   color: var(--desktop-footer-link-hover-color); 
+}
+
+.iframeWrapper{
+    text-align: center;
+}
+
+iframe{
+    filter: grayscale(100%) invert(92%) contrast(83%);
+    width: 60%;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+    .iframe{
+        width: 75%;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    .iframe{
+        width: 90%;
+        height: 56vh;
+    }
+    .infoLinks{
+        margin: 5px;
+    }
+  }

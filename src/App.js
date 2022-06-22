@@ -6,6 +6,7 @@ import Nav from "./components/page_components/Nav";
 import HomePage from "./pages/HomePage";
 import MapPage from "./pages/MapPage";
 import QRPage from "./pages/QRPage";
+import InfoPage from "./pages/InfoPage";
 import SignupUI from "./components/object_components/SignupUI";
 import LoginUI from "./components/object_components/LoginUI";
 import MobileHeader from "./components/page_components/MobileHeader";
@@ -45,6 +46,7 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/home" element={<HomePage />} />
           <Route exact path="/map/*" element={<MapPage />} />
+          <Route exact path="/info" element={<InfoPage />} />
           <Route exact path="/signup" element={<SignupUI />} />
           <Route exact path="/login" element={<LoginUI />} />
         </Routes>
@@ -61,6 +63,7 @@ function App() {
           <Route exact path="/qr" element={<QRPage />} />
           <Route exact path="/signup" element={<SignupUI />} />
           <Route exact path="/login" element={<LoginUI />} />
+          <Route exact path="/info" element={<InfoPage />} />
         </Routes>
         <MobileNav />
       </MobileView>
